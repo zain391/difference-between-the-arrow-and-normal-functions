@@ -40,6 +40,41 @@
         const arrLoging=()=>"i am an arrow loging function";
         console.log(arrLoging());
 
+        console.clear();
+
+
+
+        // now we will be creating an object
+        let obj={
+            name:"zain",
+            thirdArr:()=>{
+                console.log("the arrow function does not contains this as the object",this.name);
+            },
+            normal1:function(){
+                console.log("normal functions contains this as the object",this.name);
+            }
+
+        }
+        // console.log(obj);
+        console.log(obj.thirdArr());
+        console.log(obj.normal1());
+        // obj.normal1();
+        // obj.thirdArr();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
