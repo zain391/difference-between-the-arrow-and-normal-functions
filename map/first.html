@@ -12,10 +12,15 @@
         // the map is a method that has another function as a parameter
         let arr=[1,2,3,4];
         let obj=arr.map(function myfun(value,idex,array){
-            console.log("value",value);
-            console.log("index of value",idex);
-            console.log("the whole array",array);
-        }) 
+            // console.log("value",value);
+            // console.log("index of value",idex);
+            // console.log("the whole array",array);
+        }) ;
+        let arr2=[1,2,3,4];
+        const obj2=arr2.map(forObj2);
+        function forObj2(num){
+            console.log("i am num",num*45);
+        }
         
     </script>
 </body>
