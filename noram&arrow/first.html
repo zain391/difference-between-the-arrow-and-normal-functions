@@ -1,28 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Difference Between the arrow and normal function</title>
 </head>
+
 <body>
-    <h4>we will see what is  the main Difference between ther arrow and normal function
+    <h4>we will see what is the main Difference between ther arrow and normal function
     </h4>
     <script>
-        let firstNormalFun=function(num1){
+        let firstNormalFun = function (num1) {
             console.log(num1);
             return "i am firstNormalFunction"
         }
         console.log(firstNormalFun(45));
-        function secNormaldFun(num2){
+        function secNormaldFun(num2) {
             console.log("i am the second normal function");
             return "i am secNormalFunction"
         }
         console.log(secNormaldFun());
 
         // now we will see the diffeence between the arrow functions 
-        const fristArrFun=( parametres )=>{
+        const fristArrFun = (parametres) => {
             console.log(parametres);
             return ("i am the first arrow function ")
         }
@@ -30,14 +32,14 @@
 
 
         console.clear();
-        function loging(){
+        function loging() {
             console.log("i am a logging function");
         }
-        let result=loging();
+        let result = loging();
         console.log(result);
 
 
-        const arrLoging=()=>"i am an arrow loging function";
+        const arrLoging = () => "i am an arrow loging function";
         console.log(arrLoging());
 
         console.clear();
@@ -45,13 +47,13 @@
 
 
         // now we will be creating an object
-        let obj={
-            name:"zain",
-            thirdArr:()=>{
-                console.log("the arrow function does not contains this as the object",this.name);
+        let obj = {
+            name: "zain",
+            thirdArr: () => {
+                console.log("the arrow function does not contains this as the object", this.name);
             },
-            normal1:function(){
-                console.log("normal functions contains this as the object",this.name);
+            normal1: function () {
+                console.log("normal functions contains this as the object", this.name);
             }
 
         }
@@ -61,6 +63,23 @@
         // obj.normal1();
         // obj.thirdArr();
 
+
+        // let user = {
+        //     show() {
+        //         console.log(arguments);
+        //         console.log(typeof(arguments));
+        //     }
+        // };
+        // user.show(1, 2, "i am the unknown arrgument ");
+
+        // console.log("i am the arguments",arguments);
+
+            let obj2={
+                result(){
+                    console.log(arguments);
+                }
+            }
+            console.log(obj2.result(23,34,"i ma the unknown argument"));
 
 
 
@@ -86,4 +105,5 @@
 
     </script>
 </body>
+
 </html>
